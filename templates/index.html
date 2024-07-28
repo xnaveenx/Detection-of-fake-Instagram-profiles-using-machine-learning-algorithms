@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAKESPOTTER</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <H1> FAKESPOTTER</H1>
+        <h3>The Instagram Account Authenticity Checker</h3>
+        <form action="/predict" method="post">
+            <label for="edge_followed_by">Edge Followed By:</label>
+            <input type="text" id="edge_followed_by" name="edge_followed_by" required>
+
+            <label for="edge_follow">Edge Follow:</label>
+            <input type="text" id="edge_follow" name="edge_follow" required>
+
+            <label for="username_length">Username Length:</label>
+            <input type="text" id="username_length" name="username_length" required>
+
+            <label for="username_has_number">Username Has Number:</label>
+            <input type="text" id="username_has_number" name="username_has_number" required>
+
+            <label for="full_name_has_number">Full Name Has Number:</label>
+            <input type="text" id="full_name_has_number" name="full_name_has_number" required>
+
+            <label for="full_name_length">Full Name Length:</label>
+            <input type="text" id="full_name_length" name="full_name_length" required>
+
+            <label for="is_private">Is Private:</label>
+            <input type="text" id="is_private" name="is_private" required>
+
+            <label for="is_joined_recently">Is Joined Recently:</label>
+            <input type="text" id="is_joined_recently" name="is_joined_recently" required>
+
+            <label for="has_channel">Has Channel:</label>
+            <input type="text" id="has_channel" name="has_channel" required>
+
+            <label for="is_business_account">Is Business Account:</label>
+            <input type="text" id="is_business_account" name="is_business_account" required>
+
+            <label for="has_guides">Has Guides:</label>
+            <input type="text" id="has_guides" name="has_guides" required>
+
+            <label for="has_external_url">Has External URL:</label>
+            <input type="text" id="has_external_url" name="has_external_url" required>
+
+            <input type="submit" value="Check">
+        </form>
+    </div>
+</body>
+</html>
